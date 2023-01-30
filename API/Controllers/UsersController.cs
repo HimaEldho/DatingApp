@@ -14,7 +14,7 @@ namespace API.Controllers
     // [ApiController]
     // [Route("api/[controller]")] // GET /api/users
     [Authorize]
-    public class UsersController : ControllerBase
+    public class UsersController : BaseApiController
     {
         private readonly DataContext _context;
         public UsersController(DataContext context)
